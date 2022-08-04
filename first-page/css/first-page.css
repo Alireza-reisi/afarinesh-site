@@ -1,0 +1,609 @@
+@font-face {
+    font-family: 'B Koodak';
+    src: url('/fonts/B\ Koodak\ Outline_0.ttf') format('ttf');
+    /* -------------------------------------- */
+    font-family: 'B Titr';
+    src: url('/fonts/B\ Titr\ Bold_0.ttf') format('ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color:#001933;
+
+}
+
+
+/* ---------------------- */
+/* -----== header ==----- */
+/* ---------------------- */
+
+
+header{
+    position: sticky;
+    top: 0;
+    margin-bottom: 2vw;
+    z-index: 1000;
+}
+
+/* top links */
+/* ------  */
+.top-Media{
+    width: 100%;
+    height:2vw;
+    top: 0;
+    background-color:#FFFFCC ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.top-icons{
+    width: 40%;
+}
+.top-icons i{
+    font-size: 1.3vw;
+    margin: 0.4vw;
+    color: #003366;
+    transition: 100ms;
+}
+.top-icons i:hover{
+    color: #001933;
+    font-weight: bold;
+    font-size:1.5vw;
+    font-weight: bold;
+        
+}
+.top-date{
+    width: 50%;
+    padding-right: 5vw;
+    word-spacing: 5px;
+    font-size: 1.3vw;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: right;
+}
+/* ----  */
+/* nav   */
+/* ----  */
+.nav{
+    width: 100%;
+    height:7vw;
+    background-color: #ddcc22;
+    border-radius:  0vw 0vw 4vw 4vw;
+    box-shadow: 0vw 0vw 1.5vw 0vw #ddcc22 ;
+    z-index: 999; 
+    display: flex;  
+    direction: rtl;  
+    justify-content: space-between; 
+    align-items:center ;
+    box-sizing: border-box;
+}
+.logo{
+    font-family:'IranNastaliq';
+    font-size: 2vw;
+    /* text-align: center; */
+    margin-right: 4vw;
+    width: 20%;
+    text-shadow: 0vw 0vw 2vw #001933;
+    box-sizing: border-box;
+}
+.logo h1{
+    margin-top: 2vw;
+}
+/* nav list  */
+.nav-list{
+    width: 70%;
+}
+.nav-list ul{
+    font-family: 'B Koodak';
+    font-size: 1.35vw;
+    word-spacing: 0.5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    /* text-shadow: 0vw 0vw 1.8vw #001933; */
+    
+}
+.nav-list i{
+    direction: rtl;
+    font-size: 3vw;
+    color: #001933;
+    text-shadow: 0vw 0vw .1vw #001933;
+}
+.nav-list a{
+    direction: rtl;
+    color: #001933;
+    text-decoration: none;  
+}
+.nav-list a:hover , i:hover{
+    color: #4c0099;
+    transition: 300ms;
+}
+.nav-list a:hover{
+    font-size: 1.55vw;
+}
+.nav-list i:hover {
+    font-size:3.2vw ;
+}
+
+/* sub menu  */
+
+.has-submenu{
+    position: relative;
+}
+.has-submenu a:hover{
+    font-size: 1.35vw;
+}
+.has-submenu ul{
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    margin-top: 0;
+    border-radius:.5vw;
+    background-color:#DBD280;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: none;
+    opacity: .95;
+}
+.has-submenu li{
+    font-size: 1.5vw;
+    text-align: center;
+    width: 80%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.has-submenu li a:hover{
+    font-weight: bolder;
+    color: #39076b;
+    text-shadow: 0vw 0vw .01vw rgb(70, 20, 70);
+    font-size: 1.6vw;
+}
+.has-submenu:hover ul{
+    display: flex;
+}
+
+/* acount sign in */
+
+.account-signin{
+    width:18%;
+    margin-left: 5VW;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    align-items:center ;
+}
+.account-icon{
+    font-size: 3vw;
+    margin-right:1vw ;
+    text-align: center;
+}
+.account-icon i:hover{
+    color: #001933;
+}
+.account-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account-text a{
+    font-size: 1.5vw;
+    color: #001933;
+    text-decoration: none;
+}
+.account-text a:hover{
+    font-size: 1.55vw;
+    font-weight: bold;
+    color: #6600CC;
+}
+
+
+
+/* --------------------------- */
+/* ----== body content ==----- */
+/* --------------------------- */
+
+
+
+.main{
+    width: 90%;
+    height:auto;
+    padding-top: 2.5vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    z-index: 900;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+/* news  */
+.news{
+    text-align: center;
+}
+.news img{
+    margin: 2vw ;
+    width: 95%;
+    border-radius: 3vw;
+}
+/* main sections  */
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 90%;
+}
+.container2 h2{
+    font-family: 'B koodak';
+    /* font-family: 'B Titr'; */
+    font-size: 4vw;
+    color:snow;
+    text-align: center;
+    margin: 4vw 0vw 2vw 0vw;
+    padding-bottom: .8vw;
+    text-shadow: 0vw 0vw 2vw #ddcc22;
+}
+.container2 a{
+    text-decoration: none;
+}
+.container2 h2::before{
+    content: "◄";
+    font-size: 1.5vw;
+    vertical-align:baseline;
+    padding-right: 1vw;
+    transition: 300ms;
+}
+.container2 h2:hover::before{
+    font-size: 2.2vw;
+}
+.container2 .content-list{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.container2 .content-list img{
+    width: 19vw;
+    border: groove rgba(221, 204, 34, 1) 0.1vw  ;
+    border-radius: 2vw;
+    margin: .5vw;
+    box-shadow:0vw 0vw .5vw #ebeb7a;
+}
+
+/* -------------------------------------------- */
+/* special css for each container2  */
+/* --------------------------------------------  */
+
+/* tattoo  design  list  */
+/* -------------------- */
+.tattoo-design-list{
+    margin-top: 6vw;
+    padding:5vw;
+    padding-top: 0vw;
+    border-radius: 5vw;
+    width: 82%;
+    /* background-color: rgb(224, 224, 94); */
+    background:url(/pictures/face-tattoo-box-bg.webp) center center/cover;
+    box-shadow: 0 0 2vw -.5vw rgba(221, 204, 34, 1);
+}
+
+.tattoo-design-list h2{
+    color: #001933;
+    text-shadow: 0vw 0vw 2vw #003366;
+}
+.tattoo-design-list .content-list img{
+    box-shadow: none;
+    width: 17.5vw;
+}
+.face-tattoo{
+    background: url();
+}
+
+
+
+/* best article  */
+/* ------------------ */
+.best-article{
+    width: 65vw;
+    
+    background: url(/pictures/best-article-bg.png) no-repeat center center/cover;
+    background-size: 100% auto;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    border-radius: .5vw 5vw;
+}
+
+.best-article h2{
+    opacity: 0;
+    font-size: 0vw;
+}
+.best-article .content{
+    
+    width: 30%;
+    text-align: center;
+    padding: 2vw;
+    margin-top: 12vw;
+    margin-left: 3vw;
+    background-color: rgba(241, 232, 133, 0.7);
+    border-radius: 3vw;
+    
+}
+.best-article .content p{
+    font-family: 'B Koodak';
+    font-size: 1.3vw;
+    direction: rtl;
+    text-align: center;
+    line-height: 2.2;
+}
+.best-article .buttom{
+    text-align: center;
+    margin: auto;
+    margin-top:1.5vw;
+    margin-bottom: 3vw;
+}
+.best-article .buttom a{
+    font-family: 'B Titr';
+    font-size: 1.6vw;
+    text-decoration: none;
+    padding: .5vw 1.5vw;
+    color: #FFF;
+    background-color:#001933 ;
+    border-radius: 1.2vw;
+    transition: 300ms;
+}
+.best-article .buttom a:hover{
+    background-color: #003366;
+    color: #FFF;
+    
+}
+
+/* mobile tatoo article list   */
+/* --------------------------- */
+
+.mobile-tatoo-article-list{
+    width: 100vw;
+    margin-top: 5vw;
+    background: url(/pictures/12.jpg) center center/cover;
+    border-radius: 4vw 4vw 0vw 0vw;
+    padding-bottom:4vw ;
+    display: none;
+}
+.mobile-tatoo-article-list h2::before{
+    display: none;
+}
+.mobile-tatoo-article-list h2{
+    direction: rtl;
+    text-align: right;
+    margin-right:5vw ;
+    margin-bottom: 0vw;
+    color: #001933;
+    text-shadow:0vw 0vw .5vw #003366;
+}
+.mobile-tatoo-article-list ul{
+    margin-right: 4vw;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    direction: rtl;
+}
+.mobile-tatoo-article-list ul li{
+    width: 30%;
+    height: 4vw;
+}
+.mobile-tatoo-article-list ul li a{
+    color: #001933;
+    font-family: 'B koodak';
+    font-size: 1.7vw;
+}
+.mobile-tatoo-article-list ul li a:hover{
+    color: #1c61a7;
+    font-size:1.8vw ;
+}
+
+/* ---------------------- */
+/* ----== sitebar ==----- */
+/* ---------------------- */
+
+
+
+.sitebar{
+    width: 25%;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    /* background-color: #ddcc22; */
+    z-index: 800;
+}
+
+
+/* time reservation box  */
+/* ---------------------- */
+
+.time-reservation{
+    box-sizing: border-box;
+    width: 110%;
+    background: url(/pictures/time-reservation-bg.jpg) center ;
+    border-radius: 2vw;
+    padding:0.5vw 1vw 2vw 1vw;
+    margin-bottom: 2vw;
+}
+.time-reservation p{
+    direction: rtl;
+    text-align: center; 
+    font-family: 'B koodak';
+    font-size: 1.5vw;
+    line-height: 3vw;
+    text-shadow: 0vw 0vw .05vw #000;
+    padding: 1vw;
+}
+.time-reservation .insta{
+    color: #e61414;
+}
+.time-reservation .whats{
+    color: #1db609;
+}
+.time-reservation .instagram,.time-reservation .whatsapp {
+    padding: 1vw 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-reservation .icon{
+    font-size: 2vw;
+    width: auto;
+}
+.time-reservation .instagram .icon{
+    color: #0000cc; 
+    background: url(/pictures/instagram-icons-bg.jpg) no-repeat center center/cover;
+    padding: .4vw;
+    border-radius: .8vw;
+}
+.time-reservation .whatsapp .icon{
+    color: #0000cc; 
+    background: url(/pictures/whatsapp-icon-bg1.jpg) no-repeat center center/cover;
+    padding: .4vw;
+    border-radius: .8vw;
+}
+.time-reservation .space{
+    background: #ffb;
+    width: 70%;
+    text-decoration: none;
+    font-family: 'Bkoodak';
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: #001933;
+    padding: .4vw 0 .4vw .5vw;
+    border-radius: .5vw;
+    margin-left: .4vw;
+}
+.time-reservation .space:hover{
+    color: #0000cc;
+    text-shadow: 0vw 0vw .08vw #003366;
+}
+/* articles */
+/* ------------------- */
+
+.articles{
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 11vw;
+    box-sizing: border-box;
+    width: 110%;
+    background: url(/pictures/time-reservation-bg.jpg) center center/cover;
+    border-radius: 2vw;
+    padding:2vw 2vw 2vw 2vw;
+    direction: rtl;
+}
+ .articles .header h4{
+    direction: rtl;
+    font-family: 'B koodak';
+    font-size:3vw;
+    text-align: center;
+}
+
+ .articles .articles-list ul{
+    list-style-type:none;
+}
+
+.articles .articles-list ul li{
+    direction: rtl;
+    /* text-align: center; */
+    font-family: 'B koodak';
+    font-weight: lighter;
+    margin: 1.5vw 0vw;
+}  
+.articles .articles-list ul li a{
+    text-align: justify;
+    text-decoration: none;
+    font-size:1.5vw;
+    font-weight: 500;
+    color: #001933;
+    /* text-shadow: 0vw 0vw .1vw #001933; */
+}
+.articles .articles-list ul li::before{
+    content: "●";
+    margin-left:.8vw ;
+    font-size: 1.4vw;
+    
+}
+.articles .articles-list ul li:hover , .articles .articles-list ul li:hover a{
+    text-shadow: 0vw 0vw .05vw #115ca7;
+    transition:border 1s;
+} 
+.articles .articles-list ul li:hover a{
+    color: #1c61a7;
+    /* border-bottom: 1px dashed #003366; */
+    font-size:1.6vw ;
+}
+
+/* ----------- */
+/* footer  */
+/* ----------- */
+
+footer{
+    bottom: 0px;
+    width: 100vw;
+    height:5vw;
+
+}
+
+/* ------------------- media queries --------------------- */
+
+
+@media screen and (max-width:768px) {
+    .sitebar{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .container2 .content-list img{
+        width: 23vw;
+    }
+    .tattoo-design-list .content-list img{
+        width: 22vw;
+    }
+    .best-article{
+        width: 75vw;
+    }
+    .top-icons{
+        display: none;
+    }
+    .top-date{
+        text-align: center;
+    }
+    }
+    @media screen and (max-width:450px){
+        .account-signin{
+            opacity: 0;
+            width: 8%;
+        }
+        .mobile-tatoo-article-list{
+            display: inline-block;
+        }
+        footer{
+           display: none;
+        }
+    }
+   
+
+/*------------------------------------------------------------------------*/
+
+
